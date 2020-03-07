@@ -1,0 +1,23 @@
+.button {
+    margin: 0px;
+    height: 100px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 220px;
+    font-family: cursive;
+    font-size: 32px;
+    cursor: pointer;
+    color: blueviolet;
+    background: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: grey;
+    color: white;
+}

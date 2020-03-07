@@ -1,0 +1,41 @@
+.input {
+	width: 320px;
+	height: 40px;
+	font-size: 32px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+}
+
+.inputMail {
+	width: 390px;
+	height: 40px;
+	font-size: 32px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+}
+
+.heading {
+	font-size: 52px;
+}
+
+.text {
+	font-size: 32px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.btnSubmit {
+	width: 320px;
+	height: 60px;
+	font-size: 32px;
+	margin-top: 60px;
+	color: blueviolet;
+}
+
+.btnSubmit:hover {
+    background-color: grey;
+    color: white;
+}

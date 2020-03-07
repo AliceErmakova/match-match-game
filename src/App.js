@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Users from './components/Users/Users'
+import StartPage from '../src/components/StartPage/StartPage';
+import { BrowserRouter, Route } from 'react-router-dom'
+import Settings from './components/Settings/Settings';
+import Game from './components/Game/Game'
 
-function App() {
+
+export default function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <div className="App">
+            <BrowserRouter>
+              <div className="App">
+                <Route path='//' component = { StartPage } />
+                <Route path='/formUser/' component = { Users } />
+                <Route path='/Settings/' component = { Settings } />
+                <Route path='/game/' component = { Game} />
+              </div>
+            </BrowserRouter>
+          </div>
+          );
 }
 
-export default App;
+
